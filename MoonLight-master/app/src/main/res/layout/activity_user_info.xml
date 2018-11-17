@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserInfoActivity"
+    android:background="@drawable/backgroung_moon">
+
+    <TextView
+        android:id="@+id/textView_phone_num"
+        android:layout_width="184dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView_name"
+        android:layout_marginTop="185dp"
+        android:layout_weight="1"
+        android:alpha="0.6"
+        android:text="TextView"
+
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView_email"
+        android:layout_width="183dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView_name"
+        android:layout_marginTop="127dp"
+        android:layout_weight="1"
+        android:alpha="0.6"
+        android:text="TextView"
+
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView_name"
+        android:layout_width="181dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="75dp"
+        android:layout_weight="1"
+        android:alpha="0.6"
+        android:text="TextView"
+        android:textColor="#ffffff"
+
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView_gender"
+        android:layout_width="183dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+
+        android:layout_alignStart="@+id/textView_phone_num"
+        android:layout_marginBottom="225dp"
+        android:layout_weight="1"
+        android:alpha="0.6"
+        android:text="TextView"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView_date"
+        android:layout_width="183dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView_phone_num"
+
+        android:layout_marginTop="242dp"
+        android:layout_weight="1"
+        android:alpha="0.6"
+        android:text="TextView"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="122dp"
+        android:layout_height="101dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/textView_name"
+        android:layout_marginEnd="14dp"
+        app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+    <Button
+        android:id="@+id/button_dial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textView_phone_num"
+        android:layout_marginBottom="116dp"
+        android:text="Dial"
+        android:background="@drawable/profile_text_shape"/>
+
+    <Button
+        android:id="@+id/button_send_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/button_dial"
+        android:layout_toEndOf="@+id/textView_phone_num"
+        android:text="Send Email"
+        android:background="@drawable/profile_text_shape"/>
+</RelativeLayout>
